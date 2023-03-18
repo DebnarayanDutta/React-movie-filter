@@ -1,0 +1,64 @@
+.table-div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.movie_table{
+    border: 2px solid grey;
+    table-layout: auto;
+}
+
+.movie_table tr{
+    border: 2px solid black;
+    
+}
+
+.movie_table td{
+    border: 2px solid black;
+}
+
+table {
+    border-spacing:0;
+    padding:0;
+    margin:0;
+}
+
+.table_title{
+    width: 300px;
+}
+
+.table_genre{
+    width: 200px;
+}
+.table_year{
+    width: 200px;
+}
+
+@media screen and (max-width: 700px) {
+    
+    .table_title{
+        width: 200px;
+    }
+    
+    .table_genre{
+        width: 100px;
+    }
+    .table_year{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    
+    .table_title{
+        width: 120px;
+    }
+    
+    .table_genre{
+        width: 70px;
+    }
+    .table_year{
+        width: 70px;
+    }
+}

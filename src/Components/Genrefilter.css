@@ -1,0 +1,46 @@
+.filter_div{
+    background-color: rgb(197, 184, 184);
+    width: 720px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.filter_div h2{
+    position: relative;
+    right: 160px;
+    font-size: 30px;
+}
+
+.filter_div button{
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: rgb(246, 209, 172);
+}
+
+@media screen and (max-width:700px) {
+
+    .filter_div{
+    width: 420px;
+    height: 100px;
+}
+
+.filter_div h2{
+    position: relative;
+    right: 120px;
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width:420px) {
+
+    .filter_div{
+    width: 220px;
+    height: 150px;
+}
+
+.filter_div h2{
+    position: relative;
+    right: 40px;
+    font-size: 15px;
+}
+}

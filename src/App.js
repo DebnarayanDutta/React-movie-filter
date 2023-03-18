@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Movielist from './Components/Movielist';
+import List from './Components/List';
+import Genrefilter from './Components/Genrefilter';
+
+function movie(val){
+  return(
+    <Movielist
+    title={val.title}
+    genre={val.genre}
+    year={val.year}
+    />
+  )
+}
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <h1>Top 15 Movies of All Time</h1>
+       <Genrefilter/>
+       <br/>
+       <br/>
+       <div>
+        {List.map(movie)}
+       </div>
     </div>
   );
 }
